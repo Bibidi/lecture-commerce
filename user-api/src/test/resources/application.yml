@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/zeroorder?useSSl=false&useUnicode=true&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: zerobase
+
+#  datasource:
+#    url: jdbc:h2:~/developer/h2Data
+#    driver-class-name: org.h2.Driver
+#    username: sa
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+feign:
+  okhttp:
+    enabled: true
