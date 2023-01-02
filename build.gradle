@@ -59,6 +59,7 @@ project(':user-api') {
         implementation 'io.springfox:springfox-boot-starter:3.0.0'
         implementation 'org.springframework.data:spring-data-envers'
         implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+        implementation 'org.apache.commons:commons-lang3:3.12.0'
     }
 }
 
